@@ -28,7 +28,7 @@ class MetaGraphClient:
         self,
         page_id: Optional[str] = None,
         access_token: Optional[str] = None,
-        api_version: str = DEFAULT_GRAPH_VERSION
+        api_version: Optional[str] = None
     ):
         self.page_id = page_id or os.getenv("FB_PAGE_ID", "").strip()
         self.access_token = access_token or os.getenv("FB_PAGE_ACCESS_TOKEN", "").strip()

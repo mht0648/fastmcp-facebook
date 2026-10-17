@@ -225,16 +225,22 @@ This repository demonstrates rigorous software engineering judgment:
 
 ---
 
-## 🧪 Testing
+## 🧪 Testing & Quality Assurance
 
-Run automated tests without needing active Meta credentials:
+Run the comprehensive 60-test automated suite (100% offline, mocked integrations) without needing active Meta credentials:
 ```bash
-# Run unit & contract tests
-pytest tests/ -v
+# Run the automated test suite with formatted summary
+python3 run_tests.py
 
-# Run linting and code quality checks
-ruff check .
+# Or run with verbose test-by-test breakdown
+python3 run_tests.py -v
+
+# Or run via standard unittest / pytest
+python3 -m unittest discover -s tests -p "test_*.py" -v
+pytest tests/ -v
 ```
+
+See [docs/testing.md](docs/testing.md) for full details on our testing philosophy, edge-case coverage inventory, and adversarial prompt-injection tests.
 
 ---
 
