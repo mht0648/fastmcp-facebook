@@ -1,6 +1,6 @@
 # Authentication & Token Management Guide
 
-This guide details how to generate, exchange, and configure permanent (never-expiring) Page Access Tokens for `facebook-pages-mcp`.
+This guide details how to generate, exchange, and configure permanent (never-expiring) Page Access Tokens for `fastmcp-facebook`.
 
 ---
 

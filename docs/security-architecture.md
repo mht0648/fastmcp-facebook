@@ -1,8 +1,8 @@
-# Security Architecture: facebook-pages-mcp
+# Security Architecture: fastmcp-facebook
 
 ## 1. Principles of Operation
 
-The security architecture of `facebook-pages-mcp` is governed by five non-negotiable principles:
+The security architecture of `fastmcp-facebook` is governed by five non-negotiable principles:
 
 1. **Zero Trust across Boundaries:** We treat all inputs from AI agents, MCP clients, and Meta Graph API responses as untrusted.
 2. **Fail Securely (Fail-Closed):** If token validity, page ownership, or action approvals cannot be proven unambiguously, operations immediately terminate with an error.
@@ -16,7 +16,7 @@ The security architecture of `facebook-pages-mcp` is governed by five non-negoti
 
 ### A. Meta Graph API Authentication
 - **Page Access Tokens:** Meta distinguishes between User Access Tokens and Page Access Tokens. All Page management operations (feed posting, comment replies, photo uploads) require a Page Access Token with appropriate scopes (`pages_manage_posts`, `pages_manage_engagement`, `pages_read_engagement`).
-- **Token Verification on Boot:** On initialization, `facebook-pages-mcp` performs a lightweight call to `GET /{page-id}?fields=id,name` to ensure credentials are valid and active.
+- **Token Verification on Boot:** On initialization, `fastmcp-facebook` performs a lightweight call to `GET /{page-id}?fields=id,name` to ensure credentials are valid and active.
 
 ### B. Client-to-Server Authorization
 - **Local Stdio Trust Model:** When executing over `stdio`, the MCP server runs under the identity of the invoking operating system user. Trust is derived from the operating system's process isolation.

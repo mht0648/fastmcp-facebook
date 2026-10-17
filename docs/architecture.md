@@ -1,8 +1,8 @@
-# System Architecture: facebook-pages-mcp
+# System Architecture: fastmcp-facebook
 
 ## 1. Architectural Vision & Boundaries
 
-`facebook-pages-mcp` is designed as a **Modular Monolith** adhering to Hexagonal Architecture (Ports and Adapters) principles. The goal is to provide a zero-leakage, security-first bridge between AI assistants communicating over the Model Context Protocol (MCP) and Meta's official Graph API.
+`fastmcp-facebook` is designed as a **Modular Monolith** adhering to Hexagonal Architecture (Ports and Adapters) principles. The goal is to provide a zero-leakage, security-first bridge between AI assistants communicating over the Model Context Protocol (MCP) and Meta's official Graph API.
 
 ### Logical Boundaries
 
@@ -13,7 +13,7 @@ graph TD
         MetaAPI["Meta Graph API (https://graph.facebook.com)"]
     end
 
-    subgraph "facebook-pages-mcp Core"
+    subgraph "fastmcp-facebook Core"
         subgraph "Inbound Ports (Interfaces)"
             FastMCPServer["FastMCP Transport & Tool Registry"]
             CLIRunner["Optional CLI / Health Runner"]

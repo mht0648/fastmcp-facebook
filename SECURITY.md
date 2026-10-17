@@ -1,8 +1,8 @@
-# Security Policy: facebook-pages-mcp
+# Security Policy: fastmcp-facebook
 
 ## Reporting Security Vulnerabilities
 
-The `facebook-pages-mcp` project prioritizes security above convenience and functionality.
+The `fastmcp-facebook` project prioritizes security above convenience and functionality.
 
 If you discover a security vulnerability—especially concerning **credential leakage**, **cross-page authorization bypasses**, **prompt-injection execution**, or **two-stage approval tampering**—please report it responsibly.
 

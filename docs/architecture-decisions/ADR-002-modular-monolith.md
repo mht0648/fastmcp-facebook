@@ -7,7 +7,7 @@ Accepted
 Enterprise software must balance testability, maintainability, and delivery speed. Over-engineering with microservices or external databases introduces premature operational burden, while a monolithic single-file script creates unmaintainable technical debt.
 
 ## Decision
-We structure `facebook-pages-mcp` as a **Modular Monolith** using Hexagonal Architecture (Ports and Adapters). The codebase is divided into four explicit layers:
+We structure `fastmcp-facebook` as a **Modular Monolith** using Hexagonal Architecture (Ports and Adapters). The codebase is divided into four explicit layers:
 1. `interfaces/mcp`: FastMCP tool registration and transport adapters.
 2. `services`: Business operations (page discovery, post staging, comment triage).
 3. `security`: Staging store, approval validation, secret redaction.

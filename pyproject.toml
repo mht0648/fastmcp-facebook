@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "facebook-pages-mcp"
+name = "fastmcp-facebook"
 version = "0.1.0"
 description = "A production-grade, security-first Model Context Protocol (MCP) server for Facebook Pages management with human-in-the-loop publishing governance."
 readme = "README.md"
@@ -50,7 +50,7 @@ dev = [
 ]
 
 [project.scripts]
-facebook-pages-mcp = "fastmcp_facebook.server:main"
+fastmcp-facebook = "fastmcp_facebook.server:main"
 
 [project.urls]
 Homepage = "https://github.com/mht0648/fastmcp-facebook"

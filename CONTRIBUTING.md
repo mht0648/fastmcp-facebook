@@ -1,6 +1,6 @@
-# Contributing to facebook-pages-mcp
+# Contributing to fastmcp-facebook
 
-Thank you for your interest in contributing to `facebook-pages-mcp`!
+Thank you for your interest in contributing to `fastmcp-facebook`!
 
 This repository is designed as an architecturally rigorous, security-first open-source MCP server. All contributions must adhere to the engineering standards detailed below.
 

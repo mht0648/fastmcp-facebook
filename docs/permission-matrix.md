@@ -1,6 +1,6 @@
 # Meta Graph API Permission & Capability Matrix (v21.0)
 
-This matrix maps every supported and planned capability in `facebook-pages-mcp` to its official Meta Graph API v21.0 endpoint, HTTP method, required permission scope, and App Review requirements.
+This matrix maps every supported and planned capability in `fastmcp-facebook` to its official Meta Graph API v21.0 endpoint, HTTP method, required permission scope, and App Review requirements.
 
 ---
 

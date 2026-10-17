@@ -1,6 +1,6 @@
-# MCP Tool Reference: facebook-pages-mcp
+# MCP Tool Reference: fastmcp-facebook
 
-This document is the definitive specification for all tools exposed by `facebook-pages-mcp`.
+This document is the definitive specification for all tools exposed by `fastmcp-facebook`.
 
 ---
 

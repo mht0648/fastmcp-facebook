@@ -1,7 +1,7 @@
-# Threat Model: facebook-pages-mcp
+# Threat Model: fastmcp-facebook
 
 **Methodology:** STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege)  
-**Scope:** `facebook-pages-mcp` Server, FastMCP Transport, Meta Graph API v21.0 Client, AI Agent Interaction  
+**Scope:** `fastmcp-facebook` Server, FastMCP Transport, Meta Graph API v21.0 Client, AI Agent Interaction  
 
 ---
 

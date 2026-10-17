@@ -1,4 +1,4 @@
-# Deployment & Operations Guide: facebook-pages-mcp
+# Deployment & Operations Guide: fastmcp-facebook
 
 This document covers operational requirements, local deployment, environment configuration, and future remote hosting.
 
@@ -30,7 +30,7 @@ In local stdio mode, the MCP server is launched by the client (Claude Desktop, C
 
 ## 3. Remote Deployment Evolution (Streamable HTTP / SSE)
 
-When deploying `facebook-pages-mcp` as a remote cloud service (e.g., Docker, Kubernetes, AWS ECS):
+When deploying `fastmcp-facebook` as a remote cloud service (e.g., Docker, Kubernetes, AWS ECS):
 
 1. **Transport Migration:** FastMCP natively supports Server-Sent Events (SSE) and HTTP POST endpoints.
 2. **Reverse Proxy / TLS Termination:**
