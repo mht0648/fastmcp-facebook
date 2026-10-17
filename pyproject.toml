@@ -1,0 +1,89 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "facebook-pages-mcp"
+version = "0.1.0"
+description = "A production-grade, security-first Model Context Protocol (MCP) server for Facebook Pages management with human-in-the-loop publishing governance."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+    { name = "Muhammad Tahir", email = "mht0648@gmail.com" }
+]
+keywords = [
+    "mcp",
+    "model-context-protocol",
+    "facebook",
+    "meta-graph-api",
+    "ai-agents",
+    "fastmcp",
+    "social-media-automation"
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+    "pydantic>=2.7.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-mock>=3.12.0",
+    "ruff>=0.4.0",
+    "mypy>=1.9.0",
+]
+
+[project.scripts]
+facebook-pages-mcp = "fastmcp_facebook.server:main"
+
+[project.urls]
+Homepage = "https://github.com/mht0648/fastmcp-facebook"
+Documentation = "https://github.com/mht0648/fastmcp-facebook/tree/main/docs"
+Repository = "https://github.com/mht0648/fastmcp-facebook"
+Issues = "https://github.com/mht0648/fastmcp-facebook/issues"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+    "ARG", # flake8-unused-arguments
+]
+ignore = [
+    "E501", # line too long (handled by formatter)
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
